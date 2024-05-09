@@ -92,7 +92,8 @@ main > div{
     margin:0 10%;
     text-align: center;
 }
-.content > header{
+section header{
+    font-size: larger;
     text-shadow: white 1px 1px 2px;
     text-decoration: underline;
     text-align: center;
