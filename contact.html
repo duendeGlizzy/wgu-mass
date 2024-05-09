@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contact form page</title>
+        <link rel="stylesheet" href="stateCSS.css">
+        <script>
+            function validateEmail (){
+                if(document.getElementById("emailVerify").value != document.getElementById("email").value){
+                    event.preventDefault();
+                    alert("Those emails don't match!");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="head">
+            <div>
+                <a href="index.html">
+                    <div>
+                        <img id="flag"  src="images/massFlag.png" alt="flag of Massachusetts"/>  
+                    </div>
+                    <div>
+                        <h1 id="mass">Massachusetts</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <nav>
+             <div class="navBar">
+                <div id="nav">
+                    <a href="boston.html">Boston</a>
+                </div>
+                <div id="nav">
+                    <a href="plymouth.html">Plymouth</a>
+                </div>
+                <div id="nav">
+                    <a href="salem.html">Salem</a>
+                </div>
+                <div id="nav">
+                    <a href="cambridge.html">Cambridge</a>
+                </div>
+            </div>
+        </nav>
+        <header style="text-align: center; text-shadow: white 1px 1px 2px; text-decoration: underline;">
+            <h1>Contact form</h1>
+        </header>
+        <section>
+
+                <div id="form">
+                    <form class="theForm">
+                        <div>
+                            <label for="firstName">First name:</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="first name">
+                        </div>
+                        <div>
+                            <label for="lastName">Last name:</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="last name">
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="text" name="email" id="email" placeholder="email">
+                        </div>
+                        <div>
+                            <label for="emailVerify">Confirm email:</label>
+                            <input type="text" name="emailVerify" id="emailVerify" placeholder=" confirm email">
+                        </div>
+                        <div>
+                            <label for="question" id="ug">Message:</label>
+                            <textarea name="question" id="question" placeholder="type your message here."></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" name="submit" id="submit" onclick="validateEmail()">
+                        </div>
+                    </form>
+                </div>
+            <aside>
+                <div>
+                     <a class="twitter-timeline" data-width="100%" data-height="500px" data-theme="light" href="https://twitter.com/MassGov?ref_src=twsrc%5Etfw">Tweets by MassGov</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                 <div id="asideLink">
+                    <a href="https://www.mass.gov/"  target="_blank">Visit Mass.gov</a>
+                </div>
+                <div id="asideLink">
+                     <a href="contact.html">Contact us</a>
+                </div>
+            </aside>
+         </section>  
+    </body>
+</html>

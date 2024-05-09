@@ -1,0 +1,212 @@
+/* Banner */
+body{
+    margin:0 10%;
+    background-color:#87CEEB;
+}
+.head{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(images/banner.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+	background-position:0;
+    font-family: sans-serif;
+    text-shadow:#ADD8E6 1px 1px 2px;
+    height:450px;
+    color:white;
+    border-radius: 10px;
+}
+.head >div{
+    background-color: rgb(0, 0, 0, .3);
+    margin:auto 0;
+    border-radius: 0px;
+    border:black 1px outset;
+    padding:0 1%;
+}
+#flag{
+    height:100px;
+    margin:0 25%;
+}
+.head div h1{
+    color:white;
+    text-decoration: underline;
+    margin:5% 0;
+}
+/* nav bar */
+.navBar{
+    display:flex;
+    height:10%;
+    flex-direction: row;
+    border-bottom:black 2px solid;
+    border-top: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.navBar div{
+    border-radius: 3px;
+    text-align: center;
+    height:50px;
+    width:auto;
+    margin:1% 1%;
+    font-weight:bold;
+    font-size: 20px;
+    border:black 2px solid;
+}
+#nav a{
+    padding:10px 10px 0 10px;
+    height:100%;
+    display:block;
+    color:black;
+    text-shadow:white 1px 1px 3px;
+}
+#nav:hover{
+    border:black 2px inset;
+    translate:1px;
+    background-color: white;
+}
+/* page main content */
+section{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right:0;
+    background-size: cover;
+    width:100%;
+    margin-top:5%;
+}
+Main{
+    width:75%;
+    height:auto;
+}
+main > div{
+    background-color:rgb(0, 0, 0, .08);
+    border:rgb(0, 0, 0, .5) 1px solid;
+    margin-top:10%;
+}
+.content{
+    border-radius: 5px;
+    font-size:large;
+}
+.content p{
+    margin:0 10%;
+    text-align: center;
+}
+.content > header{
+    text-shadow: white 1px 1px 2px;
+    text-decoration: underline;
+    text-align: center;
+}
+.content span{
+    font-weight: bold;
+}
+.content div img{
+    width:50%;
+    margin:0 49%;
+    border:black 1px solid;
+    border-radius: 5px;
+}
+#massImg{
+    margin:5% 25% 0 25%;
+
+
+}
+/* Table */
+.factTable{
+padding:10px;
+}
+table{
+    margin:0 auto;
+    border:black 1px solid;
+    padding:1%;
+}
+caption{
+    float:left;
+    text-decoration: underline;
+    font-weight: bold;
+    text-shadow: white 1px 1px 2px;
+    margin-bottom:1%;
+}
+th{
+    font-size:small;
+    border-bottom: black 1px solid;
+}
+td{
+    font-size: small;
+    font-family:sans-serif;
+    border: black 1px solid;
+    width:auto;
+}
+/* map */
+.map{
+    margin:10% auto;
+    width:75%;
+    max-width:100%;
+    padding:5%;
+}
+#mapIFrame{
+    height:300px;
+    width:100%;
+    border:0;
+}
+/* aside */
+aside{
+    position: absolute;
+    right:1px;
+    display:flex;
+    flex-direction:column;
+    width:20%;
+    align-items: center;
+    height:auto;
+    padding:0 5px 0 5px;
+}
+aside >div{
+    width:100%;
+    margin-top:10px;
+    border-radius: 2px;
+}
+#asideLink a{
+    text-align: center;
+    display:block;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+    color:black;
+    text-shadow:white 1px 1px 2px;
+    border-radius: 10px;
+    border:black 2px outset;
+    width:auto;
+    padding:5% 0;
+}
+/* aside media query */
+@media screen and (max-width: 600px){
+    aside{
+        display:none;
+    }
+}
+/* form */
+#form{
+    width:75%;
+}
+form{
+    font-size: large;
+    background-color:rgb(0, 0, 0, .08);
+    border:rgb(0, 0, 0, .5) 1px solid;
+    margin:1% auto;
+}
+form div{
+    margin:1%;
+}
+label{
+    display: inline-block;
+    width:130px;
+    margin-right:5%;
+}
+textarea{
+    width:90%;
+    height:100px;
+}
+#submit{
+height:30px;
+width:100px;
+}
